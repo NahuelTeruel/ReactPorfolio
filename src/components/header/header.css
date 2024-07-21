@@ -1,3 +1,6 @@
+:root{
+    --color-primary: #6e06f2;
+}
 
 .navbar-toggler {
     border: none;
@@ -14,7 +17,7 @@
 }
 
 .nav-link:hover, .nav-link.active {
-    color: var(--color-primario);
+    color: var(--color-primary) !important /* debe mejorarse */
 }
 
 .navbar-brand {
@@ -23,11 +26,10 @@
     text-decoration: none;
     flex: 0.16;
     text-align: left;
-    color: var(--color-secundario);
 }
 
 .logo-destacado{
-    color: var(--color-primario);
+    color: var(--color-primary);
 }
 
 .img-contact {
@@ -36,5 +38,5 @@
 }
 
 .contact-btn:hover {
-    color: var(--color-primario);
+    color: var(--color-primary);
 }

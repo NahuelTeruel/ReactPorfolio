@@ -1,0 +1,29 @@
+h1 {
+    font-size: 5em;
+}
+
+.titulo {
+    font-size: 5em;
+    line-height: 0.75;
+}
+
+.btn:hover {
+    background-color: #8c4ddf;
+    border: #8c4ddf;
+}
+
+.btn-proyectos {
+    color: #24262F;
+    background-color: white;
+    border-color: #24262F;
+}
+
+.btn-proyectos:hover {
+    color: white;
+    background-color: #24262F;
+}
+
+img {
+    max-width: 25em;
+    max-height: 25em;
+}
