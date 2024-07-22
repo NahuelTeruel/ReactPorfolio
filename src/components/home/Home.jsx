@@ -12,14 +12,14 @@ function Home() {
                 <p className="fs-4 mt-5 text">Soy Full Stack developer y voy a ayudarte a generar páginas funcionales y atractivas para tu sitio web.</p>
                 <a 
                     type="button" 
-                    className="btn btn-primary mt-3 fw-bold"
+                    className="btn btn-primary mt-3 fw-bold shadow-sm"
                     href="contacto"
                 >
                     Contactame
                 </a>
                 <a
                     type="button" 
-                    className="btn btn-proyectos mt-3 ms-3 fw-bold"
+                    className="btn btn-proyectos mt-3 ms-3 fw-bold shadow-sm"
                     href="#projects"
                 >
                     Buscar Proyectos
