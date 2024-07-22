@@ -3,3 +3,8 @@
 * {
   font-family: "Poppins", "Poppins Placeholder", sans-serif;
 }
+
+.container {
+  margin-top: 10em;
+  margin-bottom: 10em;
+}

@@ -12,7 +12,7 @@ function Header() {
 
     return (
         <section className='container'>
-            <nav className="navbar navbar-expand-lg justify-content-center">
+            <nav className="navbar navbar-expand-lg justify-content-center fixed-top bg-white">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">NahuelT<span className="logo-destacado">.</span></a>
                     <button 
@@ -33,10 +33,10 @@ function Header() {
                         <div className="offcanvas-body">
                             <ul className="navbar-nav justify-content-center flex-grow-1 pe-4">
                                 <li className="nav-item">
-                                    <a className="nav-link mx-lg-2 fw-semibold active" aria-current="page" href="#Home">Home</a>
+                                    <a className="nav-link mx-lg-2 fw-semibold active" aria-current="page" href="#home">Home</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link mx-lg-2 fw-semibold" href="#About">About</a>
+                                    <a className="nav-link mx-lg-2 fw-semibold" href="#about">About</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link mx-lg-2 fw-semibold" href="#Skills">Skills</a>
