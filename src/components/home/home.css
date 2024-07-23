@@ -7,9 +7,12 @@ h1 {
     line-height: 0.75;
 }
 
+.btn-primary {
+    border: none;
+}
+
 .btn:hover {
     background-color: #8c4ddf;
-    border: #8c4ddf;
 }
 
 .btn-proyectos {

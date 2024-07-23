@@ -3,11 +3,20 @@
 }
 
 .img-skills{
-    width: 20em;
-    height: 10em;
+    width: 20rem;
+    height: 12rem;
 }
 
 .img-lugar{
     width: 90em;
     height: 10em;
+}
+
+p {
+    text-align: justify;
+}
+
+.side-line {
+    border-left: 3px solid #6200ea;
+    padding-left: 10px;
 }
