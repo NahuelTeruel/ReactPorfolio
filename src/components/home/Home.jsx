@@ -27,7 +27,7 @@ function Home() {
             </div>
             <img 
                 src="../../../public/foto-presentacion.jpg"
-                className="img-thumbnail border-primary border-1 rounded-circle p-4 mr-5" 
+                className="img-thumbnail img-presentacion border-primary border-1 rounded-circle p-4 mr-5" 
                 alt="foto-de-Nahuel"
             />
         </div>

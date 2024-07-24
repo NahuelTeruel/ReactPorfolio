@@ -14,6 +14,7 @@
 
 .nav-link {
     font-weight: 500;
+    color: #4E525A;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -33,10 +34,6 @@
 }
 
 .img-contact {
-    height: 1.5em;
-    width: 1.5em;
-}
-
-.contact-btn:hover {
-    color: var(--color-primary);
+    height: 1.5rem;
+    width: 1.5rem;
 }
