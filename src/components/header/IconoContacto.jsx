@@ -34,10 +34,10 @@ function IconoContacto() {
     }, []);
 
     return (
-        <div>
+        <div className='mt-1'>
             <div id="dynamic-content" ref={dynamicContentRef}>
                 {/* El contenido inicial puede ser el ícono o el texto según el tamaño de la pantalla */}
-                <a href='' className='nav-link mx-lg-2 fw-semibold'>Contacto</a>
+                <p href='' className='nav-link mx-lg-2 fw-semibold'>Contacto</p>
             </div>
         </div>
     );

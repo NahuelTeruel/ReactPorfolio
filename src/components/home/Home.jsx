@@ -1,4 +1,5 @@
 import './home.css'
+import {Link} from 'react-scroll';
 
 function Home() {
 
@@ -10,20 +11,27 @@ function Home() {
                 <h1 className="fw-bold text-secondary"> Full Stack</h1>
                 <p className="fw-bold text-primary titulo"> Developer</p>
                 <p className="fs-4 mt-5 text">Soy Full Stack developer y voy a ayudarte a generar páginas funcionales y atractivas para tu sitio web.</p>
-                <a 
-                    type="button" 
+                <Link
+                    type="button"  
                     className="btn btn-primary mt-3 fw-bold shadow-sm"
-                    href="contacto"
-                >
+                    to="contact" 
+                    smooth={true} 
+                    duration={500}
+                    offset={-100}
+                    >
                     Contactame
-                </a>
-                <a
-                    type="button" 
+                </Link>
+
+                <Link
+                    type="button"  
                     className="btn btn-proyectos mt-3 ms-3 fw-bold shadow-sm"
-                    href="#projects"
-                >
+                    to="projects" 
+                    smooth={true} 
+                    duration={500}
+                    offset={-100}
+                    >
                     Buscar Proyectos
-                </a>
+                </Link>
             </div>
             <img 
                 src="../../../public/foto-presentacion.jpg"

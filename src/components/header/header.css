@@ -17,8 +17,12 @@
     color: #4E525A;
 }
 
-.nav-link:hover, .nav-link.active {
-    color: var(--color-primary) !important /* debe mejorarse */
+.nav-link:hover {
+    color: var(--color-primary) !important; /* debe mejorarse */
+}
+
+.active-link {
+    color: var(--color-primary) !important;
 }
 
 .navbar-brand {

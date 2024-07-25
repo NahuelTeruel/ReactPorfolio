@@ -1,10 +1,14 @@
 import './contact.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons'
+import {faWhatsapp} from '@fortawesome/free-brands-svg-icons'
 
 const Contact = () => {
+
+    const whatsappMessage = encodeURIComponent("Hola, me contacto contigo para ofrecerte una oportunidad laboral!");
+
     return (
-        <div className="container mt-5">
+        <div className="container contact mt-5">
             <div className="row">
                 <div className="col-md-6">
                 <h2 className='fw-bold fs-1 text-secondary'> Contacto<span className='text-primary'>.</span></h2>
@@ -16,6 +20,10 @@ const Contact = () => {
                     <div className='mt-3 container-icono'>
                         <i className='icono-contacto'><FontAwesomeIcon icon={faPhone}/></i>
                         <a href="tel:+543512890754" className='ms-2 text-decoration-none enlace'> +54 351 289 0754</a>
+                    </div>
+                    <div className='mt-3 container-icono'>
+                        <i className='icono-contacto'><FontAwesomeIcon icon={faWhatsapp}/></i>
+                        <a href={`https://wa.me/5493512890754?text=${whatsappMessage}`} target='_blank' className='ms-2 text-decoration-none enlace'>+54 351 289 0754</a>
                     </div>
                 </div>
                 <div className="col-md-6 text-center">

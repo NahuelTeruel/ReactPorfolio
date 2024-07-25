@@ -52,7 +52,7 @@ const Servicios = () => {
     }, []);
 
     return (
-        <section className="container servicios py-5 position-relative">
+        <section className="container services py-5 position-relative">
             <h2 className='fw-bold fs-1 text-secondary'> Servicios<span className='text-primary'>.</span></h2>
             {services.map((service, index) => (
                 <div

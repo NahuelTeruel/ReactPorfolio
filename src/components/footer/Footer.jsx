@@ -1,8 +1,8 @@
-function App() {
+function Footer() {
 
     return (
         <>
         </>
     )
     }
-export default App
+export default Footer
