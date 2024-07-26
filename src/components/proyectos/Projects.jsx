@@ -48,7 +48,7 @@ function Projects() {
                                         >
                                         {project.title}
                                     </a>
-                                    <i className='text-primary icono-arrow ms-2 fs-4' ><FontAwesomeIcon icon={faCircleArrowUp}/></i>
+                                    <i className='text-primary ms-2 fs-4' ><FontAwesomeIcon icon={faCircleArrowUp} className='icono-arrow'/></i>
                                 </h5>
                                 <p className="card-text">{project.description}</p>
                             </div>

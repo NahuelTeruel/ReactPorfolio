@@ -4,44 +4,42 @@ import './header.css';
 
 function IconoContacto() {
     const dynamicContentRef = useRef(null);
+    const rootRef = useRef(null);
 
     useEffect(() => {
-        const handleResize = () => {
-        if (dynamicContentRef.current) {
-            const root = ReactDOM.createRoot(dynamicContentRef.current);
-            if (window.innerWidth < 992) {
-                root.render(
-                <a href='' className='nav-link mx-lg-2 fw-semibold contac-btn'>Contacto</a>
-            );
-            } else {
-                root.render(
-                <img src='../../../public/contact-img.png' className='img-contact' alt='Contacto' />
-            );
-            }
+        if (dynamicContentRef.current && !rootRef.current) {
+            rootRef.current = ReactDOM.createRoot(dynamicContentRef.current);
         }
-    };
 
-    // Configura el evento de redimensionamiento
-    window.addEventListener('resize', handleResize);
+        const handleResize = () => {
+            if (window.innerWidth < 992) {
+                rootRef.current.render(
+                    <a href='' className='nav-link mx-lg-2 fw-semibold contac-btn'>Contacto</a>
+                );
+            } else {
+                rootRef.current.render(
+                    <img src='/contact-img.png' className='img-contact' alt='Contacto' />
+                );
+            }
+        };
 
-    // Ejecuta la función una vez al montar el componente
-    handleResize();
+        window.addEventListener('resize', handleResize);
 
-    // Limpia el evento cuando el componente se desmonte
-    return () => {
-        window.removeEventListener('resize', handleResize);
-    };
+        handleResize();
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
     return (
         <div className='mt-1'>
             <div id="dynamic-content" ref={dynamicContentRef}>
-                {/* El contenido inicial puede ser el ícono o el texto según el tamaño de la pantalla */}
-                <p href='' className='nav-link mx-lg-2 fw-semibold'>Contacto</p>
+                <p className='nav-link mx-lg-2 fw-semibold'>Contacto</p>
             </div>
         </div>
     );
 }
 
-export default IconoContacto
+export default IconoContacto;
+
 

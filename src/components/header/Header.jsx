@@ -1,7 +1,7 @@
 import './header.css'
 import IconoContacto from './IconoContacto';
-import { useState} from 'react';
-import { Link} from 'react-scroll';
+import { useState, useEffect } from 'react';
+import { Link, scrollSpy, Events} from 'react-scroll';
 
 function Header() {
 
@@ -10,15 +10,25 @@ function Header() {
     const [seccionActiva, setSeccionActiva] = useState('');
 
     const cambiarSeccionActiva = (to) => {
-        console.log('Cambiando a sección:', to); 
         setSeccionActiva(to);
     };
 
-    console.log('Sección Activa:', seccionActiva);
+    useEffect(() => {
+    
+        Events.scrollEvent.register('begin', (to) => {
+            cambiarSeccionActiva(to)
+        });
+    
+        scrollSpy.update();
+    
+        return () => {
+            Events.scrollEvent.remove('begin');
+        };
+        }, []);
 
     return (
-        <section className='container'>
-            <nav className="navbar navbar-expand-lg justify-content-center fixed-top bg-white">
+        <>
+            <nav className="navbar navbar-expand-lg justify-content-center fixed-top bg-white container mt-0">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="">NahuelT<span className="logo-destacado">.</span></a>
                     <button
@@ -39,14 +49,13 @@ function Header() {
                             <ul className="navbar-nav justify-content-center flex-grow-1 pe-4">
                                 <li className="nav-item">
                                     <Link 
-                                        className={`nav-link mx-lg-2 fw-semibold ${seccionActiva === 'home' ? console.log('funciona') : ''}`}
-                                        to="home" 
+                                        className={`nav-link mx-lg-2 fw-semibold ${seccionActiva === 'home' ? 'active-link' : ''}`}
+                                        spy={true}
+                                        to="home"
                                         smooth={true} 
                                         duration={duracion}
                                         offset={-240}
-                                        onSetActive={() => {
-                                            console.log('Sección activa:', 'home');
-                                            cambiarSeccionActiva('home');}}
+                                        onSetActive={cambiarSeccionActiva}
                                         >
                                         Home
                                     </Link>
@@ -54,11 +63,12 @@ function Header() {
                                 <li className="nav-item">
                                     <Link 
                                         className={`nav-link mx-lg-2 fw-semibold ${seccionActiva === 'about' ? 'active-link' : ''}`}
-                                        to="about" 
+                                        to="about"
                                         smooth={true} 
                                         duration={duracion}
                                         offset={-180}
-                                        onSetActive={() => cambiarSeccionActiva('about')}
+                                        spy={true}
+                                        onSetActive={cambiarSeccionActiva}
                                         >
                                         About
                                     </Link>
@@ -70,7 +80,8 @@ function Header() {
                                         smooth={true} 
                                         duration={duracion}
                                         offset={-280}
-                                        onSetActive={() => cambiarSeccionActiva('skills')}
+                                        spy={true}
+                                        onSetActive={cambiarSeccionActiva}
                                         >
                                         Skills
                                     </Link>
@@ -81,7 +92,8 @@ function Header() {
                                         to="projects" smooth={true} 
                                         duration={500}
                                         offset={-100}
-                                        onSetActive={() => cambiarSeccionActiva('projects')}
+                                        spy={true}
+                                        onSetActive={cambiarSeccionActiva}
                                         >Projects
                                     </Link>
                                 </li>
@@ -92,7 +104,8 @@ function Header() {
                                         smooth={true} 
                                         duration={500}
                                         offset={-140}
-                                        onSetActive={() => cambiarSeccionActiva('services')}
+                                        spy={true}
+                                        onSetActive={cambiarSeccionActiva}
                                         >
                                         Services
                                     </Link>
@@ -104,7 +117,8 @@ function Header() {
                                         smooth={true} 
                                         duration={500}
                                         offset={-100}
-                                        onSetActive={() => cambiarSeccionActiva('contact')}
+                                        spy={true}
+                                        onSetActive={cambiarSeccionActiva}
                                         >
                                         <IconoContacto/>
                             </Link>
@@ -112,7 +126,7 @@ function Header() {
                     </div>
                 </div>
             </nav>
-        </section>
+        </>
     );
 }
 
