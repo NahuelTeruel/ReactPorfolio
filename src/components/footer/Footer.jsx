@@ -2,6 +2,7 @@ import { Link} from 'react-scroll';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBasketball} from '@fortawesome/free-solid-svg-icons'
 import {faInstagram, faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons'
+import './footer.css'
 
 function Footer() {
 
@@ -71,17 +72,45 @@ function Footer() {
                     </li>
                 </ul>
                 <div className="d-flex">
-                    <i className="mx-2 fs-4"><FontAwesomeIcon icon={faInstagram} /></i>
-                    <i className="mx-2 fs-4"><FontAwesomeIcon icon={faLinkedinIn} /></i>
-                    <i className="mx-2 fs-4"><FontAwesomeIcon icon={faGithub} /></i>
-                    <i className="mx-2 fs-4"><FontAwesomeIcon icon={faBasketball} /></i>
+                <a 
+                    href="https://www.instagram.com/nahu_t10/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-body hover-primary text-decoration-none fw-bold fs-4"
+                    >
+                    <i className="mx-2 fs-4 icono-redes"><FontAwesomeIcon icon={faInstagram} /></i>
+                </a>
+                <a 
+                    href="https://www.linkedin.com/in/nahuelteruel/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-body text-decoration-none fw-bold fs-4"
+                    >
+                    <i className="mx-2 fs-4 icono-redes"><FontAwesomeIcon icon={faLinkedinIn} /></i>
+                </a>
+                <a 
+                    href="https://github.com/NahuelTeruel"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-body text-decoration-none fw-bold fs-4"
+                    >
+                    <i className="mx-2 fs-4 icono-redes"><FontAwesomeIcon icon={faGithub} /></i>
+                </a>
+                <a 
+                    href="https://dribbble.com/Neo_Nahu07"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-body text-decoration-none fw-bold fs-4"
+                    >
+                    <i className="mx-2 fs-4 icono-redes"><FontAwesomeIcon icon={faBasketball} /></i>
+                </a> 
                 </div>
             </div>
 
             <div className='mt-5'>
                 <p className="fs-4 mb-1 fw-semibold">Estas interesado en trabajar juntos <span className='text-primary'>?</span></p>
             </div>
-            <div className="d-flex justify-content-between align-items-center p-3 bg-light">
+            <div className="d-flex justify-content-between align-items-center bg-light">
                 <div className="d-flex">
                     <Link
                         type="button"  

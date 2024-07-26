@@ -111,17 +111,19 @@ function Header() {
                                     </Link>
                                 </li>
                             </ul>
-                            <Link 
-                                        className={`nav-link mx-lg-2 fw-semibold ${seccionActiva === 'contact' ? 'active-link' : ''}`}
-                                        to="contact" 
-                                        smooth={true} 
-                                        duration={500}
-                                        offset={-100}
-                                        spy={true}
-                                        onSetActive={cambiarSeccionActiva}
-                                        >
-                                        <IconoContacto/>
-                            </Link>
+                            <div className='container-icono'>
+                                <Link 
+                                            className={`nav-link mx-lg-2 fw-semibold ${seccionActiva === 'contact' ? 'active-link' : ''}`}
+                                            to="contact" 
+                                            smooth={true} 
+                                            duration={500}
+                                            offset={-100}
+                                            spy={true}
+                                            onSetActive={cambiarSeccionActiva}
+                                            >
+                                            <IconoContacto/>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
