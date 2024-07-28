@@ -45,7 +45,7 @@ function Home() {
                 </Link>
             </div>
             <img 
-                src="../../../public/foto-presentacion.jpg"
+                src="/foto-presentacion.jpg"
                 className="img-thumbnail img-presentacion border-primary border-1 rounded-circle p-4 mr-5" 
                 alt="foto-de-Nahuel"
                 data-aos="fade-down"
