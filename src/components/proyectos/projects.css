@@ -1,3 +1,12 @@
 .icono-arrow {
     transform: rotate(45deg);
 }
+
+.img-projects {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.titulo-project:hover i, .titulo-project:hover a{
+    opacity: 80%;
+}

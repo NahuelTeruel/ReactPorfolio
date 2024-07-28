@@ -1,15 +1,26 @@
 import './home.css'
 import {Link} from 'react-scroll';
+import { useEffect } from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
 
 function Home() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: false,
+        });
+    }, []);
 
     return (
     <section className="container home align-items-center">
         <div className="d-flex">
-            <div>
+            <div data-aos="fade-down">
                 <p className="fs-4 text">Hola, Soy Nahuel 👋🏻</p>
                 <h1 className="fw-bold text-secondary"> Full Stack</h1>
-                <p className="fw-bold text-primary titulo"> Developer</p>
+                <p className="fw-bold text-primary titulo" data-aos="fade-down"> Developer</p>
                 <p className="fs-4 mt-5 text">Soy Full Stack developer y voy a ayudarte a generar páginas funcionales y atractivas para tu sitio web.</p>
                 <Link
                     type="button"  
@@ -37,6 +48,7 @@ function Home() {
                 src="../../../public/foto-presentacion.jpg"
                 className="img-thumbnail img-presentacion border-primary border-1 rounded-circle p-4 mr-5" 
                 alt="foto-de-Nahuel"
+                data-aos="fade-down"
             />
         </div>
     </section>

@@ -39,6 +39,10 @@
 }
 
 .img-contact {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+.img-contact:hover{
+    background-color: #4E525A;
 }

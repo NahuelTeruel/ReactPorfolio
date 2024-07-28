@@ -8,8 +8,8 @@
 }
 
 .img-lugar{
-    width: 90em;
-    height: 10em;
+    height: 12rem;
+    object-fit: cover;
 }
 
 p {

@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './servicios.css';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 
 const Servicios = () => {
@@ -51,8 +53,15 @@ const Servicios = () => {
         };
     }, []);
 
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: false,
+        });
+    }, []);
+
     return (
-        <section className="container services py-5 position-relative">
+        <section className="container services py-5 position-relative" data-aos="fade-down">
             <h2 className='fw-bold fs-1 text-secondary'> Servicios<span className='text-primary'>.</span></h2>
             {services.map((service, index) => (
                 <div

@@ -113,7 +113,7 @@ function Header() {
                             </ul>
                             <div className='container-icono'>
                                 <Link 
-                                            className={`nav-link mx-lg-2 fw-semibold ${seccionActiva === 'contact' ? 'active-link' : ''}`}
+                                            className={`nav-link mx-lg-2 circulo-contact fw-semibold ${seccionActiva === 'contact' ? 'active-link' : ''}`}
                                             to="contact" 
                                             smooth={true} 
                                             duration={500}

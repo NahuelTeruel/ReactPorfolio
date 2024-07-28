@@ -18,7 +18,7 @@ function IconoContacto() {
                 );
             } else {
                 rootRef.current.render(
-                    <img src='/contact-img.png' className='img-contact' alt='Contacto' />
+                    <img src='/contact-img.png' className='img-contact img-thumbnail rounded-circle align-center' alt='Contacto' />
                 );
             }
         };

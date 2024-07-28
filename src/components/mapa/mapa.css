@@ -1,5 +1,5 @@
 .mapa {
     height: 12rem;
-    width: 50rem;
+    object-fit: cover;
     border-radius: 5px;
 }

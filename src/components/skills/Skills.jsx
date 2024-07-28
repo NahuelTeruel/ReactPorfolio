@@ -1,10 +1,22 @@
+import { useEffect } from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
+
 function Skills() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: false,
+        });
+    }, []);
 
     return (
         <section className="container skills">
-            <h2 className='fw-bold fs-1 text-secondary'> Habilidades<span className='text-primary'>.</span></h2>
+            <h2 className='fw-bold fs-1 text-secondary' data-aos="fade-down"> Habilidades<span className='text-primary'>.</span></h2>
             <div className="row row-cols-3 row-cols-md-2 g-3">
-                <div className="col-md-3">
+                <div className="col-md-3" data-aos="fade-down">
                     <div className="card card-no-border">
                         <div className="card-body">
                             <ul className="list-unstyled">
@@ -17,7 +29,7 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3" data-aos="fade-down">
                     <div className="card card-no-border">
                         <div className="card-body">
                             <ul className="list-unstyled">
@@ -30,7 +42,7 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3" data-aos="fade-down">
                     <div className="card card-no-border">
                         <div className="card-body">
                             <ul className="list-unstyled">
@@ -43,7 +55,7 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3" data-aos="fade-down">
                     <div className="card card-no-border">
                         <div className="card-body">
                             <ul className="list-unstyled">
