@@ -19,7 +19,7 @@ const Contact = () => {
 
     return (
         <div className="container contact mt-5">
-            <div className="row">
+            <div className="row d-flex align-items-center">
                 <div className="col-md-6">
                     <h2 className='fw-bold fs-1 text-secondary' data-aos="fade-down"> Contacto<span className='text-primary'>.</span></h2>
                     <p className="mb-4" data-aos="fade-down">¿Buscas que trabajemos juntos? Comuníquese a través del formulario y me comunicaré con usted en las próximas 48 horas.</p>
@@ -36,9 +36,9 @@ const Contact = () => {
                         <a href={`https://web.whatsapp.com/send?phone=5493512890754&text=${whatsappMessage}`} target='_blank' className='ms-2 text-decoration-none enlace'>+54 351 289 0754</a>
                     </div>
                 </div>
-                <div className="col-md-6 text-center">
+                <div className="col-md-6 d-flex flex-column align-items-end">
                     <img 
-                        src="../../../public/foto-presentacion.jpg"
+                        src="/foto-presentacion.jpg"
                         className="img-thumbnail img-contacto border-primary border-1 rounded-circle p-4 mr-5" 
                         alt="foto-de-Nahuel"
                         data-aos="fade-down"

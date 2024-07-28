@@ -22,7 +22,7 @@ function AboutMe() {
                     <div className="card card-no-border">
                         <div className="card-body">
                             <h5 className="card-title fs-4 text-secondary fw-bold">Mi pila.</h5>
-                            <img src="../../public/skills-about.png" className="card-img-top img-skills" alt="..."/>
+                            <img src="/skills-about.png" className="card-img-top img-skills" alt="..."/>
                         </div>
                     </div>
                 </div>

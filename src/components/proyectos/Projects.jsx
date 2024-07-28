@@ -16,13 +16,13 @@ function Projects() {
 
     const projectData = [
         {
-            imgSrc: '../../../public/proyecto-api-rick-and-morty.png',
+            imgSrc: '/proyecto-api-rick-and-morty.png',
             title: 'Conexión API - The Rick and Morty',
             description: 'Página que muestra los personajes de la serie animada, gracias a la conexión con la API.',
             url: 'https://rick-morty-api-conection.netlify.app/',
         },
         {
-            imgSrc: '../../../public/portfolio.png',
+            imgSrc: '/portfolio.png',
             title: 'Portfolio',
             description: 'Portafolio realizado simplemente utilizando html y css con diseño responsivo, buscando replicar un diseño previamente seleccionado.',
             url: 'https://nahuelteruel.github.io/PagePortfolio/',
