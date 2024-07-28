@@ -33,7 +33,7 @@ const Contact = () => {
                     </div>
                     <div className='mt-3 container-icono' data-aos="fade-down">
                         <i className='icono-contacto'><FontAwesomeIcon icon={faWhatsapp}/></i>
-                        <a href={`https://web.whatsapp.com/send?phone=5493512890754&text=${whatsappMessage}`} target='_blank' className='ms-2 text-decoration-none enlace'>+54 351 289 0754</a>
+                        <a href={`https://wa.me/5493512890754?text=${whatsappMessage}`} target='_blank' className='ms-2 text-decoration-none enlace'>+54 351 289 0754</a>
                     </div>
                 </div>
                 <div className="col-md-6 d-flex flex-column align-items-end">
