@@ -15,7 +15,7 @@ function Skills() {
     return (
         <section className="container skills">
             <h2 className='fw-bold fs-1 text-secondary' data-aos="fade-down"> Habilidades<span className='text-primary'>.</span></h2>
-            <div className="row row-cols-3 row-cols-md-2 g-3">
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
                 <div className="col-md-3" data-aos="fade-down">
                     <div className="card card-no-border">
                         <div className="card-body">

@@ -16,8 +16,8 @@ function Home() {
 
     return (
     <section className="container home align-items-center">
-        <div className="d-flex">
-            <div data-aos="fade-down">
+        <div className="d-flex flex-column flex-md-row align-items-center">
+            <div className="text-container" data-aos="fade-down">
                 <p className="fs-4 text">Hola, Soy Nahuel 👋🏻</p>
                 <h1 className="fw-bold text-secondary"> Full Stack</h1>
                 <p className="fw-bold text-primary titulo" data-aos="fade-down"> Developer</p>
@@ -44,12 +44,14 @@ function Home() {
                     Buscar Proyectos
                 </Link>
             </div>
+            <div className="image-container text-center" data-aos="fade-down">  
             <img 
                 src="/foto-presentacion.jpg"
                 className="img-thumbnail img-presentacion border-primary border-1 rounded-circle p-4 mr-5" 
                 alt="foto-de-Nahuel"
                 data-aos="fade-down"
             />
+            </div>
         </div>
     </section>
     )

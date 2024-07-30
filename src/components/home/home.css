@@ -27,6 +27,17 @@ h1 {
 }
 
 .img-presentacion {
+    width: 100%;
     max-width: 25em;
     max-height: 25em;
+    height: auto;
 }
+
+.text-container, .image-container {
+    flex: 1;
+}
+
+@media (max-width: 767px) {
+    .text-container, .image-container {
+        margin-bottom: 2rem;
+}}
