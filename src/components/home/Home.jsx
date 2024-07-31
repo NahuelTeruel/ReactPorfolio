@@ -15,7 +15,7 @@ function Home() {
     }, []);
 
     return (
-    <section className="container align-items-center" id="home">
+    <section className="container" id="home">
         <div className="d-flex flex-column flex-md-row align-items-center">
             <div className="text-container" data-aos="fade-down">
                 <p className="fs-4 text">Hola, Soy Nahuel 👋🏻</p>
