@@ -1,3 +1,39 @@
 .icono-redes:hover {
     color: #6e06f2;
 }
+
+.footer-nav-content {
+    gap: 25px;
+}
+
+.footer-social {
+    gap: 25px;
+}
+
+.footer-social a {
+    height: 24px;
+    width: 24px;
+}
+
+.icono-redes:hover {
+    color: #6e06f2;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+@media(max-width: 767px) {
+    .footer-nav {
+        align-items: center;
+    }
+
+    .footer-social {
+        margin-top: 25px;
+    }
+
+    .question {
+        text-align: center;
+    }
+}

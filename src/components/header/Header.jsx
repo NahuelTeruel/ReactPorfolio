@@ -103,7 +103,7 @@ function Header() {
                                         to="services" 
                                         smooth={true} 
                                         duration={500}
-                                        offset={-140}
+                                        offset={-50}
                                         spy={true}
                                         onSetActive={cambiarSeccionActiva}
                                         >
@@ -117,7 +117,7 @@ function Header() {
                                             to="contact" 
                                             smooth={true} 
                                             duration={500}
-                                            offset={-100}
+                                            offset={-200}
                                             spy={true}
                                             onSetActive={cambiarSeccionActiva}
                                             >

@@ -18,7 +18,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <div className="container contact mt-5">
+        <div className="container mt-5" id="contact">
             <div className="row d-flex align-items-center">
                 <div className="col-md-6">
                     <h2 className='fw-bold fs-1 text-secondary' data-aos="fade-down"> Contacto<span className='text-primary'>.</span></h2>

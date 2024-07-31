@@ -18,31 +18,31 @@ function Projects() {
         {
             imgSrc: '/proyecto-api-rick-and-morty.png',
             title: 'Conexión API - The Rick and Morty',
-            description: 'Página que muestra los personajes de la serie animada, gracias a la conexión con la API.',
+            description: 'Página web que muestra los personajes de la serie animada, gracias a la conexión con la API.',
             url: 'https://rick-morty-api-conection.netlify.app/',
         },
         {
             imgSrc: '/portfolio.png',
             title: 'Portfolio',
-            description: 'Portafolio realizado simplemente utilizando html y css con diseño responsivo, buscando replicar un diseño previamente seleccionado.',
+            description: 'Portafolio anterior realizado simplemente utilizando html y css con diseño responsivo, buscando replicar un diseño previamente seleccionado.',
             url: 'https://nahuelteruel.github.io/PagePortfolio/',
         },
         {
-            imgSrc: '',
-            title: 'EventPlanner',
-            description: 'Aplicación web de planificación de eventos que permite a los usuarios organizar y gestionar eventos sin esfuerzo.',
-            url: '',
+            imgSrc: '/climaland.png',
+            title: 'ClimaLand',
+            description: 'Aplicación web que permite a los usuarios consultar el clima actual en cualquier ciudad del mundo.',
+            url: 'https://clima-land.netlify.app/',
         },
         {
-            imgSrc: '',
-            title: 'FoodieFinder',
-            description: 'Plataforma de descubrimiento de restaurantes de aspecto moderno que ofrece búsqueda, reseñas y calificaciones en tiempo real.',
-            url: '',
+            imgSrc: '/todo-list.png',
+            title: 'To-Do List',
+            description: 'Aplicación web para la gestión de tareas, que permite a los usuarios crear, actualizar, completar y eliminar tareas de manera eficiente.',
+            url: 'https://chipper-jalebi-f0b48a.netlify.app/',
         },
     ];
 
     return (
-        <section className="container projects">
+        <section className="container" id='projects'>
             <h2 className="fw-bold fs-1 text-secondary mb-5" data-aos="fade-down"> Proyectos<span className="text-primary">.</span></h2>
             <div className="row g-4" data-aos="fade-down">
                 {projectData.map((project, index) => (
